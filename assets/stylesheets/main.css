@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+==========================================
+Positioning
+==========================================
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container{
+	margin: 0 auto;
+}
+
+ .header{
+    text-align: right;
+    margin:10px;
+    padding-right: 40px;
+    word-spacing: 10px;
+ }
+
+.hero{
+	display:block;
+	margin-top: 150px;
+	text-align: center;
+}
+
+footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:40px;
+   background:#F2F2F2;
+}
+
+.footer-left{
+	float:left;
+	margin: 13px 0 10px 40px;
+}
+.footer-right{
+	float:right;
+	margin: 13px 40px 10px 0px;
+}
+.gap{
+	margin-left: 20px;
+}
+.header img{
+	display: inline-block;
+	position: relative;
+	height: 1.5em;
+	width: 1.5em;
+	/* Can I center this element vertically 
+	without making each peice it's own element? */
+}
+
+.btn{
+	margin:0px 8px;
+}
+/* 
+==========================================
+Typeography
+==========================================
+ */
+
+body{
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+
+.header a:link{
+   text-decoration: none;
+   color: black;
+   }
+.header a:visited{
+	text-decoration: none;
+	color:black;
+}
+.header a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.footer a:link{
+	color: #916666;
+	font-size: 1.03em;
+	text-decoration: none;
+}
+.footer a:visited{
+	color: #916666;
+	font-size: 1.03em;
+	text-decoration: none;
+}
+
+.footer a:hover{
+ 	text-decoration: underline;
+	color: #916666;
+
+}
+.btn,
+.btn-alt{
+	text-decoration: none;
+}
+.btn:hover{
+	text-decoration: none;
+	}
+
+ input[name="search"]{
+   display: block;
+   margin: 0 auto;
+   height: 35px;
+   width: 600px;
+   margin-bottom: 20px;
+   background-image: url("../images/microphone.png");
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: 35px;
+   border: 1px solid #B9B9B9;
+}
+input:focus{
+	border: 1px solid blue;
+}
+input:hover{
+	border: 1px solid black;
+}
+::-webkit-input-placeholder {
+    text-align: right;
+    padding-right: 35px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+    padding-right: 35px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+:-ms-input-placeholder {
+  text-align: right;
+    padding-right: 35px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
+    padding-right: 35px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.logo{
+	max-height: 200px;
+	max-width: 300px;
+	padding-bottom: 25px;
+}
+
+/* 
+==========================================
+Button Styling
+==========================================
+ */
+
+.btn,
+.btn-alt{
+    border-radius: 2px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.btn-alt{
+	background: #4386F9;
+	color: white;
+	height: 30px;
+	width: 70px;
+	border-style:none;
+}
+.btn{
+	height: 30px;
+	background: #F2F2F2;
+	color: #333333;
+	border: 1px solid #C6C6C6;
+	font-size: 12px;
+
+}
+button[name="search"]{
+	width: 110px;
+}
+button[name="lucky"]{
+	width: 130px;
+}
